@@ -28,6 +28,11 @@
 \def\ctertiary{c5d02a}  % Yellow/green
 
 %% Options
+% Recto-verso
+\DeclareOption{rv}{%
+% define rv variable
+\def\@rv{rv}%
+}%
 % Default options
 \DeclareOption*{%
 \PassOptionsToClass{\CurrentOption}{article}%
@@ -183,15 +188,18 @@
 \scalebox{\titletextxscale}[1.0]{\@title}}%
 \fline%
 \ifdefined\@subtitle%
-{\fontsize{20}{20}%
-\fontfamily{phv}\fontseries{b}\selectfont%
-\color{secondary}%
-\scalebox{\titletextxscale}[1.0]{\@subtitle}}%
+    {\fontsize{20}{20}%
+    \fontfamily{phv}\fontseries{b}\selectfont%
+    \color{secondary}%
+    \scalebox{\titletextxscale}[1.0]{\@subtitle}}%
 \fi%
-\clearpage%
 \restoregeometry%
-~\thispagestyle{empty}%
 \clearpage%
+\ifdefined\@rv{
+    ~\thispagestyle{empty}%
+    \clearpage%
+}%
+\fi%
 \setcounter{page}{1}%
 }}%
 

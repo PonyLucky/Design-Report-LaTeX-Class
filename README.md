@@ -4,6 +4,24 @@ This is a LaTeX class of a design report. As I am a student of CESI engineering
 school, the example includes the logo of the school. You can easily change it
 by replacing the file `logo.png` by your own logo.
 
+## Screenshots
+
+### Title page
+
+On this screenshot, every title variables are set. **Only the title is mandatory**, others are optional.
+
+![Title page](./screenshots/titlepage.png)
+
+### Table of contents
+
+By default the table of content does not enforce a new page. For this just add
+`\newpage` after `\tableofcontents`.
+![Table of contents](./screenshots/toc.png)
+
+### Content (sections, etc)
+
+![Content](./screenshots/content.png)
+
 ## Copyrigths
 
 ### logo/logo.png
