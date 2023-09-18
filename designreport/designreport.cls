@@ -125,7 +125,7 @@
 \par%
 }%
 % Default date
-\date{}%
+\date{\the\year}%
 
 %% Title
 \renewcommand{\maketitle}{{%

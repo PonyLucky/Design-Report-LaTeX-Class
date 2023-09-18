@@ -58,7 +58,6 @@ Basic usage (`%` are optional):
 \title{Title of the report}
 \subtitle{Subtitle of the report} %
 \author{Author} %
-\date{2023} %
 \icon{logo.png} %
 
 \begin{document}
